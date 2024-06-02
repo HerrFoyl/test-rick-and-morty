@@ -43,7 +43,7 @@
     try {
       const response = await fetch(url)
       const data = await response.json()
-      console.log(data.results) // отвал изображения
+      //console.log(data.results) // отвал изображения
       characters.value = data.results
       pagination.value.next = data.info.next
       pagination.value.prev = data.info.prev
@@ -54,7 +54,7 @@
     }
   }
 
-  const applyingFilters = () => {
+  const applyFilters = () => {
     const { name, status } = filters.value
     let url = `https://rickandmortyapi.com/api/character/?name=${name}&status=${status}`
     fetchCharacters(url)
