@@ -130,6 +130,7 @@
     justify-content: center;
     margin: 20px 0;
 
+    width: 100%;
   }
 
   .pagination button {
